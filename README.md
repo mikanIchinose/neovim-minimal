@@ -30,6 +30,6 @@ BAT_VERSION: '' # set version to install bat
 
 ## additional tool
 
-[ripgrep](https://github.com/BurntSushi/ripgrep)
-[fd](https://github.com/sharkdp/fd)
-[bat](https://github.com/sharkdp/bat)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [fd](https://github.com/sharkdp/fd)
+- [bat](https://github.com/sharkdp/bat)
