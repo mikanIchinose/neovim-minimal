@@ -1,0 +1,6 @@
+[ftplugin]
+_ = '''
+setl formatoptions-=r
+setl formatoptions-=o
+setl formatoptions+=mMBl
+'''

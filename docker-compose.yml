@@ -1,0 +1,23 @@
+version: '3'
+services:
+  neovim:
+    build: 
+      context: .
+      args:
+        USER_NAME: 'neovim'
+        VIM_ENABLE_NODE: ''
+        VIM_ENABLE_PYTHON: ''
+        VIM_ENABLE_PYTHON3: ''
+        VIM_ENABLE_DEIN: 'y'
+        VIM_ENABLE_PACKER: ''
+        RIPGREP_VERSION: ''
+        FD_VERSION: ''
+        BAT_VERSION: ''
+    volumes:
+      - ./nvim:/home/neovim/.config/nvim
+    tty: true
+    environment:
+      - MYVIMRC=/home/ichinose/.config/nvim/init.lua
+      - FZF_DEFAULT_OPTS='--layout=reverse --height=50% --border --ansi'
+      - FZF_DEFAULT_COMMAND='find .'
+
